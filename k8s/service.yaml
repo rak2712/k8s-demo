@@ -10,4 +10,4 @@ spec:
     - protocol: TCP
       port: 80          # Service port inside cluster
       targetPort: 3000  # Matches containerPort in Deployment
-      nodePort: 32000   # Port exposed on the node
+      # nodePort: 32000   # Port exposed on the node
