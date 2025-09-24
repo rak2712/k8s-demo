@@ -7,6 +7,7 @@ spec:
     app: jenkins-k8s-demo
   type: LoadBalancer
   ports:
-    - protocol: TCP
+    - name: http
+      protocol: TCP
       port: 80
       targetPort: 3000
