@@ -18,18 +18,3 @@ spec:
           ports:
             - containerPort: 3000
           imagePullPolicy: Always
-
----
-
-apiVersion: v1
-kind: Service
-metadata:
-  name: jenkins-k8s-demo-svc
-spec:
-  selector:
-    app: jenkins-k8s-demo
-  type: NodePort
-  ports:
-    - port: 3000         # Port exposed inside the cluster
-      targetPort: 3000   # Port your container is listening on
-      nodePort: 32000    # Port exposed on your node (30000-32767)
