@@ -3,9 +3,9 @@ kind: Service
 metadata:
   name: jenkins-k8s-demo-svc
 spec:
+  type: LoadBalancer
   selector:
     app: jenkins-k8s-demo
-  type: LoadBalancer
   ports:
     - name: http
       protocol: TCP
