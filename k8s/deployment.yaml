@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: jenkins-k8s-demo
-          image: docker.io/rakshith3/jenkins-k8s-demo:${BUILD_TAG}
+          image: rakshith3/jenkins-k8s-demo:latest
           ports:
             - containerPort: 3000
           imagePullPolicy: Always
