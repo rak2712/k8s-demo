@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     environment {
-        REGISTRY = "docker.io/yourdockerhubusername"
+        REGISTRY = "docker.io/rakshith3"
         APP = "jenkins-k8s-demo"
-        DOCKER_CRED = "docker-hub-cred"    // Jenkins credentials id
+        DOCKER_CRED = "dockerhub"    // Jenkins credentials id
         KUBE_CRED = "kubeconfig-cred"      // Jenkins credential holding kubeconfig file
     }
 
