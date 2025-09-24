@@ -5,9 +5,8 @@ metadata:
 spec:
   selector:
     app: jenkins-k8s-demo
-  type: NodePort
+  type: LoadBalancer
   ports:
     - protocol: TCP
-      port: 80          # Service port inside cluster
-      targetPort: 3000  # Matches containerPort in Deployment
-      # nodePort: 32000   # Port exposed on the node
+      port: 80
+      targetPort: 3000
